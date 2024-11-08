@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; /* Softer background color */
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(to right, #4a90e2 0%, #34d058 100%); /* Updated color gradient */
+    color: #ffffff;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Section Styles */
+section {
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 800px; /* Limits width for readability */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+label {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+input[type="text"], 
+textarea, 
+input[type="file"] {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus, 
+textarea:focus, 
+input[type="file"]:focus {
+    border-color: #4a90e2; /* Adds focus color */
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    padding: 12px;
+    background: linear-gradient(to right, #4CAF50, #66ffcc); /* Smooth color transition */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #66ffcc, #4CAF50);
+    color: #000;
+    transform: translateY(-2px); /* Lifts button on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    
+    section {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    label {
+        font-size: 1rem;
+    }
+    
+    button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
